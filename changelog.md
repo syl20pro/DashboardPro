@@ -9,5 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Import Chart.js v3.4.1
+- Utilisation de la police Open Sans de Google font
+- Structure and content on the readme
 - Browser theme color dark and white preference
 - Font Awesome and icons8 link
