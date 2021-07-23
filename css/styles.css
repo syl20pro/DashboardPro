@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #4834d4;
+  --success-color: #6ab04c;
+  --warning-color: #f0932b;
+  --danger-color: #eb4d4b;
+
+  --light-color: #212529;
+  --light-second-color: #727475;
+  --light-background: #ffffff;
+  --light-second-background: #f2f2f2;
+
+  --dark-color: #909090;
+  --dark-second-color: #f5f6fa;
+  --dark-background: #232420;
+  --dark-second-background: #181818;
+
+  --main-bg-color: var(--light-background);
+  --second-bg-color: var(--light-second-background);
+  --main-color: var(--light-color);
+  --second-color: var(--light-second-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans" sans-serif;
+  background: var(--main-bg-color);
+  color: var(--main-color);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
