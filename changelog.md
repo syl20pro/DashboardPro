@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - replace the fontawesome and icons8 link by a local copy of fontawesome 5 (stripped of folders not used in the project)
+- rename fontawesome folder
 
 ### Added
 
