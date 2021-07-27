@@ -1,3 +1,5 @@
+/*  CSS custom properties */
+
 :root {
   --primary-color: #4834d4;
   --success-color: #6ab04c;
@@ -13,13 +15,24 @@
   --dark-second-color: #f5f6fa;
   --dark-background: #232420;
   --dark-second-background: #181818;
+}
 
+/* Dark and light mode */
+.light {
   --main-bg-color: var(--light-background);
   --second-bg-color: var(--light-second-background);
   --main-color: var(--light-color);
   --second-color: var(--light-second-color);
 }
 
+.dark {
+  --main-bg-color: var(--dark-background);
+  --second-bg-color: var(--dark-second-background);
+  --main-color: var(--dark-color);
+  --second-color: var(--dark-second-color);
+}
+
+/* Body */
 * {
   box-sizing: border-box;
 }
@@ -27,8 +40,10 @@ body {
   font-family: "Open Sans" sans-serif;
   background: var(--main-bg-color);
   color: var(--main-color);
+  margin: 0;
 }
 
+/* NavBar */
 .navbar {
   display: flex;
   flex-direction: row;
