@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Tableau de bord - Pro</title>
+    <title>Tableau de bord gestion d'actif - Pro</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap">
-    <link rel="stylesheet" href="/DashboardPro/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap">
+    <link rel="stylesheet" type="text/css" href="/DashboardPro/assets/fontawesome/css/all.min.css">
     
 </head>
 <body>
@@ -55,19 +55,126 @@
             <i class="fas fa-search"></i>
         </form>
         <!-- End form search -->
-
+        <!-- navbar right -->
         <ul class="navbar-nav nav-right">
-            <li class="nav-item">
-                <a class="nav-link">
-                    <i class="fas fa-bars"></i>
+            <li class="nav-item mode">
+                <a class="nav-link" href="#" onclick="switchTheme()">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- Notifications button -->
+            <li class="nav-item dropdown">
                 <a class="nav-link">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+                    <span class="navbar-badge">3</span>
                 </a>
+                <ul id="notification-menu" class="dropdown-menu notification-menu">
+                    <div class="dropdown-menu-header">
+                        <span>
+                            Notifications
+                        </span>
+                    </div>
+                    <div class="dropdown-menu-content overlay-scrollbar scrollbar-hover">
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <span>
+                                    Réception de dividende de AT&T
+                                    <br>
+                                    <span>
+                                        05/06/2022
+                                    </span> 
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <span>
+                                    Réception de dividende de TOTAL Energies
+                                    <br>
+                                    <span>
+                                        01/10/2022
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <span>
+                                    Réception de dividende de Vonovia
+                                    <br>
+                                    <span>
+                                        13/05/2022
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="dropdown-menu-footer">
+                        <span>
+                            Voir toutes les notifications
+                        </span>
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item avt-wrapper">
+                <div class="avt dropdown">
+                    <img src="assets/img/#" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+                    <ul id="user-menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <span>Profil</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <span>Paramètres</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-piggy-bank"></i>
+                                </div>
+                                <span>Mon compte</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-file-signature"></i>
+                                </div>
+                                <span>Manifest</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </div>
+                                <span>Déconnexion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
+        <!-- End navbar right -->
     </div>
     <!-- End Navbar -->
 
@@ -100,7 +207,7 @@
                         <i class="far fa-calendar-alt"></i>
                     </div>
                     <span>
-                        Calendrier
+                        Agenda
                     </span>
                 </a>
             </li>
@@ -137,10 +244,10 @@
             <li class="sidebar-nav-item">
                 <a href="#" class="sidebar-nav-link">
                     <div>
-                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-headset"></i>
                     </div>
                     <span>
-                        Paramètres
+                        Support
                     </span>
                 </a>
             </li>
