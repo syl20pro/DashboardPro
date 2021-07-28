@@ -79,7 +79,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
+  z-index: 101;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
 }
 
@@ -115,3 +115,51 @@ body {
   margin: auto;
   width: 50%;
 }
+
+.navbar-search input {
+  background: var(--second-bg-color);
+  border: none;
+  padding: 12px 50px 12px 50px;
+  width: 100%;
+  outline: none;
+  color: var(--main-color);
+  border-radius: 1.25rem;
+}
+
+.navbar-search i {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  transform: translateY(-50%);
+  color: var(--second-color);
+  cursor: pointer;
+}
+
+.logo {
+  height: 3.75rem;
+  padding: 0.625rem;
+}
+
+.avt img {
+  width: 2.438rem;
+  height: 2.438rem;
+  border-radius: 50%;
+}
+
+.avt {
+  padding: 0.688rem;
+}
+
+.navbar-badge {
+  font-size: 0.6rem;
+  padding: 0.125rem 0.25rem;
+  font-weight: 300;
+  position: absolute;
+  right: 0.313rem;
+  top: 0.563rem;
+  color: #ffffff;
+  background: var(--danger-color);
+  border-radius: 0.313rem;
+}
+
+/* Sidebar */
